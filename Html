@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación Técnica</title>
+  <style>
+      :root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --text-color: #333;
+  --background-color: #f9f9f9;
+  --navbar-width: 280px;
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.8;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+#navbar {
+  width: var(--navbar-width);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--secondary-color);
+  padding: 30px 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all var(--transition-speed) ease;
+}
+
+#navbar header {
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all var(--transition-speed);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateX(5px);
+}
+
+#main-doc {
+  margin-left: var(--navbar-width);
+  padding: 40px;
+  max-width: 1200px;
+  width: calc(100% - var(--navbar-width));
+}
+
+.main-section {
+  margin-bottom: 60px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.main-section header {
+  font-size: 2.2em;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 15px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  display: block;
+  margin: 20px 0;
+  font-size: 0.9em;
+  border-left: 4px solid var(--primary-color);
+}
+
+ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --navbar-width: 100%;
+  }
+
+  #main-doc {
+    width: 100%;
+    margin-left: 0;
+    padding-top: calc(var(--navbar-width) + 20px);
+  }
+
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 20px;
+  }
+
+  .nav-link:hover {
+    transform: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>Índice</header>
+    <a class="nav-link" href="#Introducción">Introducción</a>
+    <a class="nav-link" href="#Aspectos_de_la_Biodiversidad"> Aspectos de la Biodiversidad </a>
+    <a class="nav-link" href="#Metodología">Metodología</a>
+    <a class="nav-link" href="#Resultados">Resultados</a>
+    <a class="nav-link" href="#Conclusiones">Conclusiones</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introducción">
+      <header>Introducción</header>
+      <p><span>EL OCÉANO ES CUNA</span> de la vida en nuestro planeta y representa, además, el hábitat más extenso de la biosfera. Sin embargo, mientras que la exploración de la biodiversidad en los ecosistemas terrestres depara actualmente pocas sorpresas, por cuanto las formas dominantes de vida están ya descritas, la exploración de la biodiversidad en los ecosistemas marinos se encuentra aún en sus inicios. Este contraste se debe a tres hechos principales:</p>
+      <p>1. Las limitaciones tecnológicas a la exploración del océano, ya que, por ejemplo,
+la vida a más de 200 m de profundidad hábitat que comprende más del 90% del
+espacio disponible para la vida en el planeta sólo se observó directamente por vez
+primera en 1934, y pocos países están hoy capacitados para la observación directa
+en las grandes profundidades oceánicas.</p>
+<p>2. La biodiversidad marina está dominada por organismos microscópicos, con un repertorio metabólico muy superior al encontrado en tierra y que proporciona
+constantes sorpresas. Basta indicar, a modo de ejemplo, que los dos grupos de
+organismos fotosintéticos más abundantes en el océano, y responsables del 40% de la producción primaria marina, se describieron por primera vez hace poco más de dos décadas. El océano sigue asombrándonos a niveles taxonómicos elevados incluso se descubren nuevos filos–, cosa que no ocurre en tierra, y algunos de los animales más grandes del planeta como los calamares gigantes todavía no han sido observados en su hábitat. Las mayores oportunidades de lograr hallazgos en biodiversidad marina se dan en los hábitats remotos o extremos como fosas oceánicas, cuevas submarinas, ambientes hipersalinos y anóxicos, fuentes hidrotermales, y bolsas de aguas hipersalinas y anóxicas, que son los menos explorados.</p>
+<p>3. El esfuerzo de investigación invertido en la exploración de la biodiversidad marina es muy inferior al realizado para la exploración y conservación de la biodiversidad terrestre. Este contraste queda constatado en una serie de hechos objetivos. Así, en términos de publicaciones científicas en revistas internacionales, el esfuerzo de investigación en el estudio de la biodiversidad marina es 10 veces inferior que en el caso de la biodiversidad terrestre (Hendriks, Duarte y Heip 2006). Otro ejemplo lo tenemos en el primer congreso del programa internacional Diversitas, dedicado a la investigación de la biodiversidad global, donde el número de contribuciones relacionadas con biodiversidad terrestre fue más de 10 veces superior al de las referentes a biodiversidad marina (v.www.diversitasinternational.org).</p>
+<p>La exploración de la biodiversidad marina se enfrenta, por tanto, con importantes desafíos tecnológicos, incluyendo el desarrollo de tecnologías para explorar y estudiar la vida a grandes profundidades (vehículos operados remotamente, submarinos, plataformas habitadas a gran profundidad, etc.), además de sondas moleculares para identificar nuevas formas de vida microbiana en el océano. Así pues, la exploración de la biodiversidad marina pasa por un estímulo tecnológico, del que se pueden derivar importantes beneficios para la sociedad. La importante riqueza genética presente en el océano representa ya hoy una significativa fuente de recursos y potencialidades para la biotecnología y la farmacia (Munroet al. 1999). El número de especies marinas cultivadas está aumentando rápidamente (Naylor et al. 2000) y, tras sólo 30 años de acuicultura intensiva, supera con mucho al de especies animales sujetas a explotación después de casi 10.000 años de ganadería</p>
+<p>El retraso en la investigación sobre biodiversidad marina en comparación con la
+biodiversidad terrestre se refleja también en un retraso paralelo en la conservación de los hábitats marinos en relación con los terrestres. Así, la tasa de pérdida de hábitats con un papel clave en la conservación de la biodiversidad marina como arrecifes de coral, praderas submarinas, bosques de manglar y marismas es entre 2 y 10 veces superior a la tasa de pérdida del bosque tropical (Hendriks, Duarte y Heip 2006). En contraste, el área marina protegida es inferior al 0,1% de la extensión de los océanos, mientras que la superficie terrestre amparada se aproxima al objetivo del 10% fijado por la Convención para la Biodiversidad Biológica (Hendriks, Duarte y Heip 2006). La conservación de la biodiversidad marina se basa,además, en modelos de áreas protegidas derivados directamente de modelos desarrollados para la conservación en ecosistemas terrestres y que, dado el carácter abierto de los océanos, podrían no resultar efectivos en el mar.</p>
+<p>El desarrollo de las oportunidades para aportar servicios a la sociedad a partir de la biodiversidad marina, así como el de conceptos y modelos que permitan su conservación, requiere que progresemos desde nuestra limitada comprensión actual de la vida en el océano hacia una exploración completa de los ecosistemas marinos y un aumento de nuestra capacidad de gestionar sus recursos. Este esfuerzo se ha de acompañar de un impulso paralelo en el desarrollo de tecnologías para la investigación de la vida oceánica, lo que plantea desafíos comparables a los de la exploración espacial, y por ello no resulta sorprendente que la NASA desempeñe un papel relevante en la promoción de la exploración de la biodiversidad marina (Fiala y Stetter 2004).</p>
+          </section>
+
+    <section class="main-section" id="Aspectos_de_la_Biodiversidad">
+      <header>Aspectos de la Biodiversidad</header>
+      <p><span>LOS OCÉANOS SON EL BIOMA</span> más grande de la Tierra. Con 361 millones de km2 y una profundidad media de 3.730 m, cubren el 71% de la superficie planetaria. Su volumen (1.348 millones de km3) resulta inmenso. Además, han sido el escenario primigenio de la diversificación de la vida. Así, los primeros fósiles conocidos corresponden a estromatolitos marinos, estructuras laminares producidas por la actividad de cianobacterias, preservados en Australia y datados en 3.500 millones de años. De igual modo, los primeros animales aparecen también en el mar. Se conocen rastros fósiles de 800 millones de años de antigüedad atribuibles directamente a su actividad, si bien los primeros fósiles de animales «reales» están datados algo más tardíamente, a finales del período Proterozoico, hace unos 640 millones de años. Estos animales integran la denominada fauna de «Ediacara» del sistema Vendiense, nombre que hace referencia a la localidad australiana donde se descubrieron originariamente, si bien se han hallado con posterioridad en otros puntos del globo. Se trata de animales sin partes duras, difícilmente asignables a alguno de los tipos modernos.</p>
+      <p>En contraposición, el registro fósil terrestre más temprano lo conforman esporas, posiblemente de briófitos (musgos, hepáticas, etc.), adscribibles al Ordovícico medio (hace 450 millones de años). Por su parte, la primera ocupación animal de los continentes parece aún algo más tardía, pues se remonta al Silúrico (hace poco más de 400 millones de años), periodo del que proceden restos de miriápodos (ciempiés y milpiés) y arácnidos, si bien hay rastros fosilizados atribuibles a artrópodos terrestres datados en el Ordovícico</p>
+      <p>Por tanto, los organismos marinos han contado con muchísimo más tiempo para
+la diversificación que los terrestres (el doble en el caso de los animales), pese a lo cual los océanos parecen albergar tan sólo un 2% de las especies animales conocidas. Los científicos han formulado diversas hipótesis para explicar esta paradoja. Se ha hablado del enorme potencial de dispersión de los propágulos (huevos y larvas) de los animales marinos, que actuaría en contra de la segregación genética de sus poblaciones en un mundo aparentemente sin barreras. Y también se ha aludido al diferente porte de los productores primarios en mares y continentes. Así, mientras que en tierra la vegetación arbórea puede alcanzar algo más de 100
+metros de altura y proporciona multitud de nichos y microhábitats para la diversificación de otros organismos, en el mar el peso de la producción primaria pivota sobre bacterias y algas unicelulares, que ofrecen poco soporte estructural para la diversificación. Por no mencionar la ausencia de procesos coevolutivos entre insectos y angiospermas (plantas con flores) en el mar, verdadera fuerza impulsora de la biodiversidad terrestre (hay sólo 58 especies de angiospermas marinas,frente a unas 300.000 en los continentes).</p>
+
+<code>COMPARACIÓN ENTRE LA BIODIVERSIDAD DE MARES
+Y CONTINENTES</code>
+
+<p> Se estima que el número de especies animales en los continentes ronda los 12
+millones (cuadro 1.1). El 91% de ellas pertenece a un único filo (el nivel más alto
+de la jerarquía taxonómica), el de los artrópodos, en el que se engloban criaturas
+como los insectos, crustáceos, arácnidos, ácaros y otros grupos menores. El de los
+continentes es, por tanto, un mundo poco diverso en cuanto a planes de organización corporal, habiéndose alcanzado el gran número de especies presentes mediante variaciones prácticamente infinitas de únicamente dos tipos de arquitecturas corporales, a saber: la de los artrópodos con un solo par de antenas y tres pares de patas (los insectos); y la de los artrópodos que caminan por medio de los apéndices de la región perioral (los quelicerados: arácnidos, ácaros y afines). Es cierto que lo que queda aún por descubrir y catalogar en los continentes en cuanto a número de especies es apabullante. Las expediciones entomológicas a los bosques tropicales siguen localizando miles de nuevas especies de insectos, hasta el punto de que muchas de ellas no pueden describirse con los métodos convencionales por falta de tiempo y/o de recursos, y se identifican únicamente con un número o código de registro. Un ejemplo: en un estudio de sólo 10 árboles de una
+selva de Borneo, el entomólogo británico Nigel Stork recogió un promedio de 580 especies de insectos por árbol, una cifra considerable si se compara con las 100-200 que alberga un roble europeo. En las selvas tropicales, la diversidad arbórea (hasta 250 especies por hectárea) es mucho mayor que en los bosques templados,y la especificidad de los insectos para con los árboles que los hospedan se sitúa entre el 3 y el 20% (Ødegaard et al. 2000). Estas cifras suponen un número extremadamente elevado de especies por hectárea, sin contar los insectos de hábitat terrestre en vez de arbóreo, que también presentan una diversidad mucho mayor en las selvas tropicales que en cualquier otro tipo de bosque.</p>
+<p> Pero también es cierto que en los continentes ya raramente se describen categorías taxonómicas de rango superior. Recientemente (2002) se ha dado a conocer el hallazgo en Namibia y Tanzania de un nuevo orden de insectos, Mantophasmatodea, parecidos a las mantis religiosas, si bien había ejemplares de este grupo en museos sudafricanos desde hacía más de un siglo, aunque erróneamente clasificados. La última descripción de un nuevo orden de insectos databa de 1914 (Notoptera).</p>
+<p>En los continentes tampoco se describen ya con frecuencia especies de gran porte. Éstas proceden siempre de áreas extremadamente remotas o azotadas por guerras o regímenes aislacionistas, lo que ha impedido su exploración zoológica hasta la actualidad. Los hallazgos más recientes y espectaculares incluyen a Dendrolagusmbasio un canguro arborícola de Nueva Guinea descrito en 1995–, al bóvido Pseudoryx nghetinhensis y al cérvido Megamuntiacus vuquangensis estos últimos, pobladores de los bosques de Vietnam y Laos, descritos respectivamente en 1993 y 1996.</p>
+<p>La situación en el mar es diferente. La cifra de especies marinas descritas ronda
+solamente las 212.000, aunque aquí son 8, y no sólo 1, los filos animales que se reparten el 90% del total de especies (cuadro 1.2). La diversidad de planes corporales es, por tanto, mucho mayor que en los continentes: se conocen 30 filos en el mar, 15 de ellos incluyendo algunos como equinodermos, urocordados o ctenóforos exclusivos. En comparación, únicamente se han censado 15 filos terrestres, siendo sólo 1, el de los onicóforos –un tipo de gusanos con patas y mandíbulas y con textura de terciopelo–, exclusivo de este medio. Durante un tiempo, algunos fósiles marinos del Cámbrico, como Aysheaia, han sido considerados representantes de este último filo, si bien ahora se los clasifica como pertenecientes a un grupo aparte, conocido vagamente como «lobópodos». Parece que limitaciones de tipo fisiológico (p. ej., la necesidad de vanadio, un componente de los pigmentos sanguíneos de los urocordados ampliamente disponible en el agua marina, pero en concentración mucho más baja o irregular en las aguas dulces) o estructural (la conexión directa del sistema ambulacral de los equinodermos con el exterior, que dificulta la osmorregulación) han frenado la invasión de las aguas continentales por parte de algunos filos típicamente marinos.</p>
+<p>Por lo que sabemos, la mayoría de organismos bentónicos de aguas someras muestran una distribución extremadamente discontinua, y se requiere de un muestreo intensivo y bien diseñado para revelar adecuadamente su diversidad. Así, Cunha et al. (2005) acaban de dar a conocer, mediante técnicas moleculares, la extraordinaria diversidad de moluscos gasterópodos del género Conus presente en aguas del archipiélago de Cabo Verde (52 especies, 49 de ellas endémicas), con algunas especies restringidas incluso a una única bahía, y con vicariantes en bahías próximas. En mares tropicales, un estudio reciente de los moluscos existentes en un área de 292 km2 situada en Nueva Caledonia (Pacífico suroeste), fuera ya de la zona de máxima diversidad de corales del Indopacífico, ha revelado la presencia de 2.738 especies en 42 estaciones de muestreo repartidas por todo tipo de hábitats, y las curvas de acumulación de especies sugieren que podrían alcanzarse las 3.900 con un esfuerzo de muestreo adicional (Bouchet et al. 2002). Esto es mucho más que lo contabilizado en ninguna otra parte en una superficie oceánica semejante; y, lo que resulta aún más apasionante, un lugar distante 200 km en la misma costa de Nueva Caledonia comparte con la zona estudiada
+¡sólo un 36% de las especies!</p>
+<code>LA BIODIVERSIDAD EN EL MAR PROFUNDO</code>
+<p>Como hemos visto, la franja costera de los océanos, con su gran variedad de hábitats (arrecifes de coral, manglares, praderas de fanerógamas, estuarios, fondos blandos y rocosos…), alberga una biodiversidad extraordinaria. Cabría suponer que, en comparación, el fondo oceánico a más de 1.000 m de profundidad, supuetamente uniforme y mayoritariamente cubierto por sedimentos blandos, no pudiera rivalizar con ella en cuanto a número de especies. Es éste el hábitat más extenso del planeta, con una superficie de aproximadamente 300 millones de km2. Y, no obstante, su diversidad biológica permanece prácticamente sin prospectar, debido sobre todo a limitaciones técnicas y económicas. Así, resulta muy difícil manejar con precisión maquinaria, redes y vehículos a estas profundidades, y el tiempo requerido para cada inmersión o lance de pesca es muy elevado. Sólo el descenso de una draga a 4.000 m de profundidad supone una inversión de dos horas, y otras dos su izamiento. Y el precio cobrado por usar un buque oceano-
+gráfico capacitado para operar a estas profundidades es muy elevado (unos 50.000 euros/día en el caso del buque alemán Polarstern, uno de los más cualificados en la actualidad para el estudio de fondos profundos). Si computamos 0,5 m2 de superficie de fondo oceánico muestreada por draga, que es lo que abarcan las más grandes del tipo llamado «Van Veen», y cinco lances de pesca al día con el personal científico trabajando ininterrumpidamente 24 horas–, resulta que muestrear 2,5 m2 de fondo oceánico supone un día completo de trabajo y un coste mínimo de ¡50.000 euros! No hay cabida, por tanto, para muchos lances pesqueros en los cruceros oceanográficos modernos, en general dedicados a menesteres diferentes a la mera prospección faunística.</p>
+<p>Es, además, un mundo oscuro. Alrededor de los 900 m de profundidad, la oscuri-
+dad es total para el ojo humano, de modo que lo que pueda atisbarse directamente con cámaras de filmación, vehículos no tripulados o submarinos queda limitado a lo cubierto por los haces de luz artificial.</p>
+<p>El estudio de este medio se inició tarde. Durante la primera mitad del siglo XIX, el
+océano se consideraba azoico más allá de las 300 brazas (aproximadamente 550 m)
+de profundidad. El arraigo de esta idea se debe al célebre naturalista británico Edward Forbes (1815-1854), uno de los biólogos marinos más cualificados y autor de Natural history of the european seas, el manual de biología marina más elaborado de su época, publicado póstumamente en 1859. Forbes publicó en 1843 una memoria sobre los moluscos, cnidarios y equinodermos del mar Egeo, donde no halló ningún rastro de vida animal en sondeos realizados a 230 brazas (unoa 420 m) de profundidad. Esto le llevó a generalizar la situación a todo el océano, y su autoridad no dejó resquicios para la refutación de la teoría, que contó con una amplia aceptación pese a la existencia de indicios en su contra. Así, diversos científicos y exploradores británicos habían venido detectando señales de vida animal a gran profundidad durante la primera mitad del siglo. Entre ellos cabe mencionar a John Ross, que recuperó una estrella de mar a 1.800 m de profundidad en la bahía de Baffin en 1818; o a James Clark Ross, quien en los sondeos que realizó alrededor de Nueva Zelanda constató la existencia de vida animal en fondos a
+730 m de profundidad en 1843. Algo más tarde, en 1860, George C. Wallich capturó 13 ofiuras a 2.293 m entre la península del Labrador e Islandia. Más concluyente aún para desacreditar la teoría azoica debería haber sido el hallazgo, esemismo año, de animales sésiles adheridos a un cable telegráfico submarino averiado, y recuperado para su reparación, entre Cerdeña y el cabo Bon (Túnez) a 2.184 m de profundidad. Todo esto no se tuvo en consideración hasta 1868-1869, cuando los también británicos Charles Wyville Thomson y William Carpenter emprendieron sus célebres campañas de prospección en el Atlántico a bordo del Lightning y el Porcupine, en las que descubrieron vida animal a 4.289 m de profundidad. En descargo de Forbes cabe decir que el Porcupine, durante una ulterior campaña de dragados en el Mediterráneo iniciada en 1870, constató que la vida animal a 2.744 m de profundidad era allí muy pobre en comparación con la hallada en aguas profundas atlánticas, y que incluso algunas otras zonas prospectadas en el mismo mar
+resultaron ser prácticamente azoicas.</p>
+<p> La vida en las profundidades oceánicas no se observó directamente por primera vez hasta 1934, cuando William Beebe, zoólogo, y Otis Barton, ingeniero, descendieron a 923 m de profundidad en aguas de las islas Bermudas dentro del Bathysphere, una claustrofóbica esfera de acero provista de ojos de buey y conectada al barco nodriza por vía telefónica. Y aún hubieron de transcurrir casi 30 años para que el hombre alcanzara el fondo de las fosas oceánicas más profundas; fue en 1960, cuando el batiscafo Trieste, con el suizo Jacques Pickard y el estadounidense Don Walsh a bordo, logró posarse en el fondo de la fosa de las Marianas, a 10.915 m de profundidad, la cota submarina más profunda conocida.</p>
+<p>La superficie total de fondo oceánico a más de 3.000 m de profundidad que ha sido prospectada en busca de fauna es inferior a 30 m2 y presenta una gran heterogeneidad en cuanto a composición taxonómica de una zona a otra. El número de especies nuevas que se obtienen en los lances de pesca a estas profundidades es muy elevado, y prácticamente siempre supone más del 50% de las capturas. Recientemente, el muestreo de 1 m2 de superficie oceánica a 5.000 m de profundidad en la cuenca de Angola, en el Atlántico sur, ha reportado 600 especies nuevas de copépodos harpacticoides (Pedro Martínez-Arbizu, comunicación personal). Si tenemos en cuenta que la cifra de especies de copépodos conocidas en la actualidad ronda las 12.500 –incluyendo las innumerables formas parásitas de peces e invertebrados marinos, habría que dar crédito a algunas aproximaciones que calculan que en los fondos oceánicos profundos podrían existir hasta 10 millones de
+especies o incluso 100 millones si se incluye la meiofauna (Lambshead, 1993). Cabe decir, no obstante, que los métodos de estimación utilizados para lanzar estas predicciones son poco elaborados, por lo que estas suposiciones deben considerarse con muchas reservas. En efecto, en un estudio que se ha convertido en clásico, Grassle y Maciolek (1992) establecieron un modelo de correlación espacial entre el número de especies capturadas y la distancia recorrida a lo largo de un transecto entre los 1.500 y los 2.100 m de profundidad en el talud continental de la costa este de Norteamérica, y estimaron que se acumulaba una especie adicional por cada km2 de fondo oceánico muestreado. Basándose en esto, dedujeron que las 798 especies de invertebrados que hallaron en 21 m2 de fondo se convertían en 100 millones cuando la cifra se extrapolaba a todo el fondo oceánico mundial situado por debajo de los 1.000 m. No es necesario decir que hacen falta muchos
+más estudios de prospección faunística y de heterogeneidad espacial a todas las escalas en muchas otras partes del océano para evaluar la solidez de este tipo de estimaciones.</p>
+<p>Vemos, pues, que aún es extremadamente aventurado avanzar cifras sobre el grado
+de diversidad específica que albergan los océanos, si bien es probable que sea comparable al del medio terrestre. A lo rudimentario de los métodos estadísticos de estimación de este número cabe añadir que los datos de base que se manejan son extremadamente fragmentarios en el océano, tanto en cobertura geográfica como taxonómica. Y existen limitaciones operacionales graves para obtenerlos, sobre todo en el mar profundo. En cualquier caso, los océanos son un reservorio extraordinario de biodiversidad. La vida ha tenido en ellos mucho más tiempo para diversificarse que en los continentes. Albergan hasta 30 filos de metazoos, de los que 15 son exclusivamente marinos frente a sólo 1 terrestre, y, simultáneamente, constituyen el hábitat del animal más grande de la Tierra, la ballena azul, que puede alcanzar hasta 36 m de longitud.</p>
+
+      <ul>
+        <li>Elemento de lista en la introducción</li>
+        <li>Otro elemento de lista en la introducción</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Metodología">
+      <header>Metodología</header>
+      <p>HACE UN CUARTO DE SIGLO, los científicos creían que las cerca de 1,6 millones de especies identificadas y descritas hasta ese momento representaban casi el 50% del
+total de especies de plantas y animales de la Tierra. Sin embargo, tras la aplicación de nuevos métodos de análisis al estudio de la diversidad de insectos en las selvas tropicales y de pequeños organismos macrobentónicos en aguas marinas profundas, el número de especies conocidas ha crecido hasta los 1,7-1,8 millones, y se estima que existen entre 10 millones y 100 millones de especies todavía por descubrir. Paralelamente al cambio de este paradigma, también se han producido cambios en el inventario de especies, actividad científica que ha pasado de considerarse anticuada a convertirse en una tarea puntera de megaciencia. Este cambio de actitud se debe seguramente a la inquietud de la sociedad respecto al cambio climático y el desarrollo no sostenible, cuya expresión más directa para la estrategia científica se traduce en que no podemos perder más tiempo si queremos documentar y dar nombre a la biodiversidad antes de que se pierda para siempre.</p>
+      <p>El mejor ejemplo para ilustrar cómo responde el público ante el descubrimiento
+de nuevas especies quizá lo hallemos en la reacción de los medios de comunicación tras la reciente descripción de Kiwa hirsuta (foto 2.2). Este nuevo cangrejo galateido, descubierto en unas fuentes hidrotermales en mayo de 2005 cerca de la isla de Pascua, fue presentado por Enrique Macpherson, William Jones y Michel Segonzac ese mismo año, en el número de diciembre de Zoosystema, como un nuevo miembro de una nueva familia, género y especie (Macpherson, Jones y Segonzac 2005). El 7 de marzo de 2006, un periódico local publicó un artículo sobre Michel Segonzac y el reciente descubrimiento del «cangrejo Yeti», suceso del que se harían eco rápidamente los medios nacionales e internacionales. El 17
+de marzo había cerca de 150.000 referencias de Kiwa hirsuta en Internet. El 20 de marzo, esa cifra llegaba a las 200.000. En esta ocasión, tanto los medios como el público quedaron atónitos al enterarse de que todavía había zonas del mapa de la biodiversidad mundial por descubrir. En general es poco conocido, más allá del cerrado círculo de los sistemáticos, que el descubrimiento y la identificación de nuevas especies de plantas y animales no constituyen un hecho aislado, sino que se trata de algo común en los estudios científicos tanto en los trabajos de campo como en el laboratorio. Con especial atención a los océanos, el presente artículo abordará las siguientes cuestiones: ¿cuántas especies marinas están descritas en la actualidad?; ¿a qué velocidad avanza el inventario de biodiversidad marina?; ¿podemos estimar la magnitud global de la biodiversidad marina?</p>
+      <code>¿CUÁNTAS ESPECIES MARINAS ESTÁN DESCRITAS EN
+LA ACTUALIDAD?</code>
+<p>La respuesta corta a la pregunta sobre el número de especies marinas descritas
+actualmente es la siguiente: entre 250.000 (Groombridge y Jenkins 2000; cuadro 2.1) y 274.000 (Reaka-Kudla 1997). La respuesta larga sería, sin embargo, que estas cifras son demasiado redondas como para no despertar sospechas. Esto es cierto, pero también lo es que existen grandes dificultades para analizar el número real de especies conocidas.</p>
+<p>Las tecnologías de la información han facilitado la compilación y la actualiza-
+ción de los catálogos de especies, y algunas iniciativas importantes entre las
+que destacan Species 2000 y Global Biodiversity Information Facility (GBIF) han favorecido la creación de listados taxonómicos acreditados. Sin embargo, todavía estamos lejos de disponer de un registro de referencia global de todos los organismos que habitan en la Tierra, por no hablar de los océanos, y el grado de cobertura en los distintos grupos biológicos es muy desigual. En un extremo encontramos los taxones de los vertebrados, cuyos inventarios se actualizan constantemente en todo el mundo; así, por ejemplo, basta con pinchar varias veces con el ratón en Fishbase (www.fishbase.org) para saber que
+hoy en día se dan por válidas 27.683 especies de peces, de las cuales 16.475 son de origen marino. En el otro extremo hallamos taxones como los equinodermos o los poliquetos, para los que no hay ningún listado realmente global. Y en una posición intermedia se sitúan otros taxones, como los moluscos, para los que existen algunas bases de datos regionales relativamente importantes (p. ej., la base de datos de moluscos marinos europeos CLEMAM [v. cuadro 2.1], donde figuran 3.641 especies válidas), pero ninguna que incluya especies de todo el mundo.</p>
+<p>Existen dos áreas dudosas importantes a la hora de evaluar el número de especies
+marinas válidas. Una de ellas es el número de eucariotas unicelulares, especialmente de foraminíferos y radiolarios. Los foraminíferos (filo Granuloreticulosa) poseen una concha calcárea, y los radiolarios (filo Actinopoda), un esqueleto de sílice, y los restos de ambos constituyen una parte significativa de los sedimentos marinos. Estos dos grupos son importantes en los estudios estratigráficos y paleoambientales, de modo que incluso las especies de la época reciente acaban siendo estudiadas por micropaleontólogos. Como resultado, las especies existentes hoy en día a veces no se computan por separado, y cabe la posibilidad de que las mismas cifras sean utilizadas por distintos autores para referirse a taxones actuales y taxones fósiles conjuntamente o sólo a los primeros. Así, según Groombridge y Jenkins (2000) existen «40.000 especies de fósiles» y «más de 4.000 de especies de la época reciente» de Granuloreticulosa, mientras que Brusca y Brusca (2003) cifran el número total de especies en 40.000. En mi caso me he decantado por la opinión de Vickerman (1992), quien una vez dijo que había 10.000 especies de foraminíferos, «excluyendo el enorme número de especies fósiles en tanto que esto sea posible».</p>
+<p>El otro campo dudoso se deriva del uso de sinónimos. Los naturalistas
+han dado nombre a plantas y animales durante casi 250 años. En este tiempo se han asignado millones de nombres, a veces como resultado de excelentes trabajos científicos, y a veces también como resultado de observaciones erróneas o del desconocimiento de las reglas de la biología. Algunos autores pueden haber descrito, sin saberlo, la misma especie con distintos nombres en diferentes regiones del mundo (foto 2.4), u organismos que creían que pertenecían a especies distintas cuando en realidad sólo estaban dando nombre a variantes ecológicas o fenotípicas, machos o hembras, jóvenes o adultos, o a diversas fases del ciclo vital de una misma especie.</p>
+<p>A menudo no disponemos de todas las piezas del rompecabezas, y los científicos
+pueden interpretar un mismo hecho de manera diferente. Por ejemplo, durante casi dos siglos se ha discutido si las formas atlánticas y mediterráneas de una pequeña almeja de la familia Veneridae, ingrediente de los spaghetti alle vonglone, pertenecían a una misma especie, o a dos, o si eran subespecies geográficas de una misma especie. Se trataba básicamente de una opinión personal hasta que con técnicas electroforéticas se analizaron las poblaciones de dos formas que coexisten en el sur de Portugal y se demostró que Chamelea gallina (Linnaeus) la «forma mediterránea»– y Chamelea striatula (Da Costa) –la «forma atlántica» eran dos especies aisladas biológicamente desde el punto de vista reproductivo (Backeljau et al. 1994) (mapa 2.1). El problema de la sinonimia no resulta tan acuciante en el caso de organismos difíciles de capturar o de estudiar o que no han despertado tanto la atención de los científicos, pues es menos probable que hayan generado errores o divergencias de opinión. Sin embargo, sí se trata de un problema importante en los grupos de organismos grandes o que suscitan mayor interés (peces, corales, cangrejos y moluscos), los cuales concentran la atención de viajeros, coleccionistas y científicos. Hablando de moluscos, Boss (1970) afirmó una vez que cada especie podía recibir cuatro o cinco nombres distintos. Con un total acumulado de 300.000 nombres y una ratio de sinónimos tal vez sólo comparable a la de las mariposas, los moluscos son el grupo de organismos marinos con mayor relación nombres-especie. Hoy en día desconocemos incluso si el número válido de especies de moluscos actuales es de 45.000 o de 130.000; esta falta de certeza está muy generalizada en el caso de la biota reciente y fósil, pero en los moluscos se considera «especialmente problemática» (Ham-
+mond 1995).</p>
+<p>A falta de catálogos acreditados de especies, ¿qué hacen los sucesivos autores?
+Hasta cierto punto podemos decir que se copian unos a otros, lo que da una falsa impresión de seguridad. Cualquiera podría pensar que si todos los autores citan el mismo número, entonces es que ese número es correcto. La cifra de 6.000-7.000 especies de equinodermos suena «bien» porque es la que han citado todos los investigadores durante más de 20 años; pero podría ser que se tratase del mismo cálculo aproximado o de un error repetido una y otra vez. Incluso los números que se presentan en este capítulo (cuadro 2.1) podrían criticarse, dado que algunos provienen de una compilación previa. Sin embargo, en ocasiones también distintos autores dan valores muy diferentes sobre un mismo taxón. Así, por ejemplo, pese a que frecuentemente se ha publicado que el número de especies de nematodos oscila entre 12.000 y 25.000, Robert May (1988) estimó que podía llegar a 1 millón de especies. La autoridad de Robert May en lo relativo al número de especies es tal, que esta cifra se ha citado repetidamente. No obstante, hoy en día se cree que el número real de especies de nematodos es de 27.000 (Hugot, Baujard y Morand 2001), y lo que May «contó» en 1988 era en realidad una estimación del número total de especies, conocidas y por conocer. Las últimas, por supuesto, no deberían incluirse en un estudio sobre la magnitud de la biodiversidad conocida.</p>
+<p>La conclusión de este apartado es que cuando los científicos dicen que «se han
+descrito entre 1,7-1,8 millones de especies», o que «existen del orden de 230.000 a
+250.000 especies de organismos marinos descritos», sus afirmaciones deberían interpretarse, en buena parte, como resultado de conjeturas hechas con cierto fundamento. Para matizar esta cifra, y sin olvidar que el cálculo del número de especies de la biota terrestre y de aguas dulces adolece de similares imprecisiones, señalaremos que la biodiversidad marina representa el 15% de la biodiversidad global descrita (1.860.000 especies; Reaka-Kudla 1997).</p>
+
+<code>¿A QUÉ VELOCIDAD AVANZA EL INVENTARIO DE BIODIVERSIDAD
+MARINA?</code>
+<p>En los años cincuenta y sesenta, el público y los políticos veían la exploración del mundo en busca de nuevas especies que describir y nombrar como algo que había vivido su gran apogeo entre 1850 y los primeros años del siglo XIX, y estaban convencidos de que a finales del siglo XX conoceríamos la mayoría de las especies. Como resultado o causa de esta actitud, los recursos institucionales destinados al inventario de especies de la fauna y la flora (todavía no se había acuñado el término «biodiversidad») fueron relativamente escasos. En oceanografía, la expedición danesa Galathea, realizada en 1950-1952, fue la última expedición oceanográfica alrededor del mundo, en la misma línea que la expedición Challenger de 1873-1876. Las cosas cambiaron drásticamente en los años ochenta y noventa, cuando aparecieron nuevos paradigmas en el mundo de la ciencia y la política.</p>
+<p>Ciencia. Tras la aplicación de nuevos métodos de muestreo en el estudio de la diversidad de insectos en las selvas tropicales, se estimó que existían 30 millones de especies de insectos. Tal estimación llevó a varios científicos a pensar que si había 1,7 millones de especies descritas, todavía quedaban de 10 millones a 100 millones de nuevas especies por descubrir, describir y nombrar (Stork 1988). Al mismo tiempo, también se observó que la velocidad de extinción de especies era mucho mayor de lo previsible. Pese a que el alcance de la crisis de extinción es tema de debate tanto dentro como fuera de la comunidad científica, algunas autoridades consideran que cada año se extinguen unas 50.000 especies. Esto significa que, al ritmo actual, a finales del siglo XXI habrá desaparecido entre una tercera parte y la mitad del total de especies de la Tierra.</p>
+<p>Política. Los espectaculares avances en el campo de la ingeniería molecular han fomentado el estudio a gran escala de las características y las propiedades de los organismos microbianos, plantas y animales, en busca de nuevos compuestos bioactivos, así como el aislamiento de genes con aplicaciones en agricultura, farmacia o servicios ecológicos. Esto abre todo un mundo de nuevas posibilidades a la biodiversidad, en el que los organismos vivos pueden tener un potencial valor económico. La Convención sobre Diversidad Biológica (CDB) ha fomentado la aparición de nuevas actitudes y la implantación de nuevas normativas. Asimismo, también ha cambiado la manera en que las comunidades científicas y no científicas contabilizan, documentan, protegen y utilizan las especies de fauna y flora.</p>
+<p>La taxonomía sigue siendo una disciplina muy activa dentro de la investigación y, literalmente, existen millares de revistas donde se publica el descubrimiento de nuevas especies. No obstante, saber cuántas nuevas especies se están describiendo en total es tarea difícil, debido nuevamente a la falta de un registro centralizado de biodiversidad. A partir de los datos de Hammond (1992) sobre animales y hongos y los datos del índice Kew para plantas, entre otros, se estima que los taxonomistas describen 16.600 nuevas especies al año, de las que 7.200 (43%) son insectos. ¿Cuántas de estas especies son marinas? De nuevo, no existe ningún registro de biodiversidad centralizado ni ninguna respuesta inmediata. Con el firme propósito de responder a esta pregunta, entre febrero y junio de 2005 revisamos varias bases de datos bibliográficas (Ducloux 2005). Puesto que se pensó que los datos de 2004 serían incompletos, decidimos examinar únicamente los artículos publicados en 2002 y 2003. Tras la búsqueda bibliográfica identificamos 3.217 nombres. Entre enero y febrero de 2006 repetimos el mismo ejercicio y aparecieron 53 nuevos nombres (1,6% del total). Parece, pues, razonable pensar que los datos que aquí se presentan son representativos de la situación real.</p>
+<p>Los datos de 2002-2003 nos muestran que cada año se describen 1.635 nuevas especies marinas (gráfico 2.1). No es sorprendente que los filos con mayor número de especies (Crustacea y Mollusca) sean también los filos en los que se describe un mayor número de especies nuevas. Por otro lado, filos más pequeños (Cnidaria, Porifera) contribuyen obviamente en menor proporción al crecimiento anual. Sin embargo, el crecimiento anual no sólo es proporcional al tamaño de los filos. El caso de los nematodos es un buen ejemplo. A pesar de que se conoce un número similar de especies de nematodos y de peces, se han descrito hasta cinco veces más especies nuevas de peces que de nematodos. Claramente, el inventario de biodiversidad marina refleja tanto el tamaño del filo como el tamaño de la comunidad taxonomista dedicada a su estudio. En el caso de los filos más pequeños (p. ej., Entoprocta, Gastrotricha, Kinorhyncha), la comunidad de taxonomistas es tan reducida que las descripciones publicadas en dos años muy probablemente sean el resultado del trabajo de tan sólo uno o dos científicos.</p>
+<p>¿Cuántas de estas especies son válidas y cuántas de ellas son sinónimos? No hay motivos para pensar que los autores contemporáneos trabajen mucho mejor que los del siglo pasado, y por ello parece inevitable que algunas de las especies que se están describiendo ya se hayan descrito previamente. Los autores contemporáneos disponen de mejores herramientas técnicas y más conocimientos que los de hace una centuria, por lo que sería lógico pensar que las descripciones de especies son más acertadas y que se dan menos casos de sinónimos. Además existe una mayor comunicación entre científicos, hecho que debería favorecer el intercambio de conocimiento y, a su vez, disminuir el riesgo de duplicidad de las investigaciones y la aparición de sinónimos. Sin embargo, una de las principales características de la bibliografía moderna es la aparición de incontables libros, revistas y resúmenes de simposios que no son de libre acceso a través de Internet, motivo por el cual a menudo es difícil que los taxonomistas estén totalmente seguros de haber revisado toda la bibliografía relevante. Otra consecuencia del continuo crecimiento del número de revistas dedicadas a estos temas es la competencia, voluntaria o involuntaria, existente entre algunos autores por ser los primeros en dar nombre a una especie. Por ejemplo, el belga Koen Fraussen y el americano Martin Snyder describieron la misma especie de caracol marino procedente de una misma fuente comercial de Filipinas. Koen Fraussen la describió con el nombre Euthria suduirauti en una revista belga en abril de 2003, mientras que Martin Snyder hizo lo propio en una revista española en junio de 2003 con el nombre Latirus cloveri. En este caso particular, la sinonimia fue detectada rápidamente (Snyder y Bouchet 2006), pero lo habitual es que los sinónimos pasen desapercibidos durante décadas. Tal y como se apuntó anteriormente, determinados grupos de organismos siempre han suscitado gran competencia entre investigadores, pero otros muchos difícilmente atraerán la atención de más de una persona a la vez. Con todo, creo que los sinónimos representan un 10-20% de las 1.635 especies descritas anualmente, lo que significa que se incorporan de 1.300 a 1.500 especies válidas cada año al inventario de vida marina.</p>
+<p>Los taxones marinos representan el 9,7% del total de nuevas especies descritas actuamente, pero la biodiversidad marina constituye el 15% de la biodiversidad total.Dicho de otra manera, el crecimiento anual del inventario de biodiversidad marina es del 0,65%, mientras que el de la biota terrestre y de aguas dulces es del 1%. Este desequilibrio entre el interés por la biodiversidad marina y no marina no parece haberse reconocido en la bibliografía, y se desconoce su importancia. Ciertamente, el peso de la entomología y de los entomólogos aficionados no tiene un equivalente en la biodiversidad marina, ni siquiera en el caso de los moluscos, donde los malacólogos aficionados son los responsables de la descripción del 27% de las nuevas especies (Bouchet 1997). Moluscos aparte, mi impresión es que los aficionados sólo desempeñan un pequeño papel en la descripción de nuevas especies marinas, representando quizá del orden de un 10-15% del total. En cambio, un análisis similar (Fontaine y Bouchet, sin publicar) sobre nuevas especies de animales en ecosistemas terrestres y de aguas dulces de Europa descritas entre 1998 y 2002 reveló que el 72% de las descripciones de nuevas especies correspondían a insectos y que los aficionados y los profesionales retirados habían descrito el 46 y el 12%, respectivamente. La aportación de los taxonomistas aficionados en entomología y malacología no es un fenómeno nuevo, pero las diferencias entre el ritmo de avance del inventario de biodiversidad marina y no marina pueden ser un reflejo del mermado papel de los aficionados en biodiversidad marina comparado con su papel en entomología.</p>
+<p>El número total de autores que nombraron y describieron nuevas especies marinas en 2002-2003 fue de 2.208. La cifra media de especies descritas por autor fue de 1,5. En realidad, esta relación varía según los taxones (gráfico 2.2). Así, fueron necesarios 441 autores para nombrar y describir 159 especies de procariotas (0,36 especies por autor), mientras que sólo se precisaron 61 autores para nombrar y describir un número parecido (152 especies) de nuevos cnidaridos (2,49 especies por autor). La relación es incluso mayor en el caso de los moluscos, donde el promedio por autor es de 3,05. Estas diferencias reflejan discrepancias en el contenido medio de las publicaciones taxonómicas: en microbiología, el número de autores en los artículos que describen una nueva especie es de 3-4; en zoología y ficología, sin embargo, un artículo típico está firmado sólo por 1-2 autores, que revisan un grupo o un género completo de especies y describen varias especies nuevas al mismo tiempo.</p>
+<p>La Convención sobre Diversidad Biológica ha subrayado el desequilibrio entre la distribución de la biodiversidad y la distribución del conocimiento que ésta genera. La mayor parte de la biodiversidad conocida y por conocer se encuentra en países tropicales, la mayoría de los cuales son países emergentes del sur o países en vías de desarrollo, mientras que el grueso del conocimiento y los recursos sobre biodiversidad se halla en países desarrollados. La Convención sobre Diversidad Biológica utiliza el término «impedimento taxonómico» para aludir a la falta de expertos sistemáticos y de infraestructuras de apoyo para la documentación de labiodiversidad. Este impedimento taxonómico queda absolutamente patente cuando las nuevas especies marinas son clasificadas en función del país al que los autores estén afiliados institucionalmente (gráfico 2.3) (por ejemplo, las especies llevan la etiqueta «Alemania» cuando éste es el país de la dirección institucional que figura en los artículos publicados, independientemente de la nacionalidad de los autores). No resulta sorprendente entonces que los autores de Estados Unidos sean responsables de la descripción del 17,3% de las nuevas especies, y los países de laUnión Europea, de otro 34,4%. En el caso de los autores australianos, la cifra es del 9,4%, un rendimiento nada menospreciable si tenemos en cuenta que sus 20 millones de habitantes sólo representan el 0,3% de la población mundial. Si Japón se añade al listado anterior (8,1%), sólo nos queda un 30,8% para repartir entre el resto del mundo. En 1992, Gaston y May ya describieron un desajuste similar entre la ubicación geográfica de los taxonomistas en activo y la diversidad biológica, basándose en datos de plantas e insectos. En lo referente a biodiversidadmarina, las zonas del globo mejor conocidas son las aguas templadas del hemisferio norte, donde la curiosidad científica cuenta con una tradición de más de dos siglos. En cualquier otra región, nuestros conocimientos varían desde razonables (Norteamérica, Japón, Nueva Zelanda y el Antártico) hasta pobres (la mayoría del trópico y de las aguas oceánicas profundas).</p>
+<p>Ahora ya sabemos que se han descrito entre 230.000 y 275.000 especies marinas y que cada año se descubren entre 1.300 y 1.500 nuevas especies. La pregunta que surge a continuación es cuántas especies quedan por nombrar y cuánto tiempo será necesario para inventariar todas las especies. El crecimiento actual del inventario de varios grupos taxonómicos es reflejo de las motivaciones personales, el interés público y las ayudas concedidas a la investigación, y no del tamaño de los grupos en cuestión. Por ejemplo, es posible que el estancamiento de la curva acumulativa de gasterópodos marinos en Europa desde principios del siglo XX hasta los años sesenta diera la falsa impresión de que se había finalizado el inventario de especies.</p>
+<code>Diversidad microbiana</code>
+<p>Durante décadas, documentar la diversidad microbiana no era en esencia muy distinto de documentar la micro y macro fauna y flora: los organismos se aislaban a partir de muestras recogidas sobre el terreno, y posteriormente se cultivaban y se observaban al microscopio óptico y electrónico. Este método de trabajo sólo permite reconocer los organismos cultivables y/o los que tienen características morfológicas que posibilitan su identificación al microscopio. Los estudios basados en caracteres morfológicos realizados en los últimos dos siglos revelaron un número significativo de especies microbianas, pero la información se recogió de manera poco sistemática. El análisis completo de la comunidad microbiológica de más allá de unas pocas muestras es un trabajo tan laborioso que resulta casi inviable. Aunque todavía es preciso aislar y seccionar, teñir o cultivar las especies no descritas antes de asignarles un nombre, desde hace un tiempo también se aplican técnicas
+moleculares que no requieren el cultivo de organismos y que permiten explorar la diversidad de las comunidades naturales de las arqueas y las bacterias (estas técnicas se utilizan cada vez más también en el estudio de protistas). Otra ventaja de las técnicas moleculares respecto a los análisis al microscopio –que suelen estudiar la diversidad celular en pequeños volúmenes de agua (generalmente menos de 1 litro de agua filtrada) y que tienden a pasar por alto muchas de las especies más raras radica en que las técnicas moleculares permiten extraer ADN de muestras grandes de agua (decenas de litros) e identificar taxones específicos poco abundantes (por ejemplo, con técnicas de PCR). No es de extrañar, pues, que los métodos de estudio no basados en el cultivo de organismos se estén empleando en la reevaluación de la diversidad microbiana de los ecosistemas naturales en todos los dominios de la vida (Venter et al. 2004; Habura et al. 2004).</p>
+<p>En un estudio muy reciente (Countway et al. 2005), Peter Countway filtró 32 litros de agua de mar procedente de las costas de Carolina del Norte a través de una malla de 200 µm y recogió el ADN filtrado a las 0, 24 y 72 horas. La clonación y la secuenciación del ADNr 18S reveló 165 filotipos únicos con una similitud del 95%, un porcentaje indicativo de diferencias al menos a nivel de género. Un número importante de estos filotipos eran «desconocidos» o «no cultivados». Muchos de los filotipos estaban representados por una única secuencia, y los indicadores de rarefacción y de diversidad hallaron la presencia de 229 a 381 filotipos. Teniendo en cuenta que la distinción de especies a menudo se fija en niveles de similitud del 97-98% –en lugar del 95% que adoptaron estos autores–, Countway y sus colaboradores concluyeron que sus estimaciones eran «presuntamente el límite inferior de la verdadera diversidad de especies presente en la muestra». Así pues, si en una gota de agua de mar hay 160 especies de bacterias (Curtis, Sloan y Scannell 2002) y un cubo contiene centenares de especies de eucariotas unicelulares, el número de especies en el mundo es casi inconcebible. Ésta es otra gran incógnita que ha dado lugar a dos puntos de vista opuestos. El primero de ellos es el que defiende que «todo existe en todas partes». Basándose en el estudio de ciliados de vida libre de dos masas de agua europeas, Fenchel y Finlay (2004) sostienen que los organismos pequeños (1 mm de longitud) poseen una distribución cosmopolita. Según esto, los procariotas y los eucariotas unicelulares presentarían una elevada diversidad alfa, pero contribuirían poco a engrosar los números globales. Curtis, Sloan y Scannell (2002) creen que es poco probable que la diversidad bacteriana del mar supere los 2 millones de especies. Sin embargo, la idea de que los microorganismos tienen una distribución ubicua es cada vez más discutida por investigadores dedicados a la protistología (v., p. ej., Foissner 1999, Dolan 2006). Hemos planteado las preguntas y disponemos de las herramientas para responderlas, pero la diversidad alfa y global de los procariotas y los protistas probablemente seguirá siendo una de las incógnitas sobre la biodiversidad marina que tardaremos años en solucionar.</p> 
+<code>Simbiontes</code>
+<p>Gran parte de la biodiversidad está representada por simbiontes, un término que
+engloba a comensales, mutualistas y parásitos (Windsor 1998). Los simbiontes han
+estado inframuestreados e infraestudiados (foto 2.7). En su artículo titulado
+«¿Cuántos copépodos?», Arthur Humes (1994) afirmó que el 95% de los copépo-
+dos de muestras de Madagascar, Nueva Caledonia y las islas Molucas que viven
+asociados con invertebrados bentónicos correspondían a especies nuevas. Los
+copépodos conocidos son «relativamente pocos (1,14%) en relación con las 151.400 posibles especies de invertebrados marinos huésped»: entonces se conocía
+un total de 1.614 especies de copépodos asociados a 1.727 especies huésped, ade-
+más de otras 1.827 especies de copépodos parásitos de peces. El número real de
+especies de copépodos parásitos o asociados sería, por supuesto, mucho mayor. En
+Nueva Caledonia y en las islas Molucas, los corales duros viven en simbiosis con
+5-9 especies de copépodos. Algunas especies de corales, como Acropora hyacinthus,
+pueden llegar incluso a vivir con 13 especies de copépodos. Un único ejemplar de
+holoturoideo estudiado por Humes, Thelenota ananas, albergaba 5 especies de
+copépodos. Obviamente, las 9.500 especies de copépodos de vida libre (parásitos o
+asociados) conocidas sólo constituyen una pequeña parte del número real en todo
+el mundo.</p>
+<p>El número de helmintos marinos es otra incógnita (foto 2.8). La diversidad de
+parásitos de peces marinos se ha estudiado menos que la de los parásitos de peces
+de aguas dulces. Estudios previos –revisados por Justine, en prensa– estimaron
+que había de 3 a 5 especies de monogéneos por especie de pez. En la bibliografía
+pueden encontrarse también ejemplos de peces marinos con 10-13 especies de
+monogéneos parásitos. La diversidad engendra diversidad: Rohde (1999) ha
+demostrado que el número de monogéneos por especie de pez es mayor en las
+aguas tropicales (2 especies por pez como media) que en las aguas marinas profun-
+das o los mares árticos (0,3 especies por pez). Los peces también tienen digéneos,
+cestodos y nematodos. En los mares europeos hay 1,7 veces más digéneos que
+monogéneos. En las aguas de México, el mero Epinephelus morio alberga un total de 30 parásitos: 1 monogéneo, 3 cestodos, 17 digéneos, 8 nematodos y 1 acanto-
+céfalo (Moravec et al. 1997). Las estimaciones sobre el número total de especies de
+helmintos son difíciles, debido a dos factores que pueden reforzarse o anularse
+mutuamente, al igual que sucede con las estimaciones sobre el número de insectos
+fitófagos (Ødegaard 2000): la especificidad del huésped y la vicarianza.</p>
+<p>  – Especificidad del huésped. Los parásitos pueden tener distintos grados de espe-
+cificidad. De las 12 especies de monogéneos encontradas en las branquias del
+mero Epinephelus maculatus de las aguas de Nueva Caledonia, 10 eran especficas del huésped (Justine, en prensa), mientras que 1 o 2 eran generalistas.</p>
+
+<code>Extrapolaciones basadas en muestras</code>
+<p>Desde la publicación del influyente artículo de Hessler y Sanders en 1967, se ha
+destacado continuamente que las aguas profundas son reservorios de biodiversi-
+dad desconocida. En realidad, las profundidades marinas fascinan por sus dimen-
+siones y su inaccesibilidad. Antes de los años sesenta, las aguas de las profundida-
+des marinas eran vistas como zonas de condiciones muy duras donde únicamente
+podían vivir especies capaces de resistir en condiciones de oscuridad absoluta, temperaturas cercanas a los 0 ºC, escasez de nutrientes y presiones intolerables. Se
+creía que sólo un reducido número de especies eran capaces de vivir en zonas
+como ésta y que se trataba de especies cosmopolitas o, al menos, que presentaban
+una gran distribución. Era la analogía «tipo desierto», que todavía persiste cuan-
+do se describe a las fuentes hidrotermales como «oasis». En los años sesenta, tras
+conocerse la compleja topografía del fondo marino y descubrirse que los peque-
+ños organismos macrobentónicos de las profundidades eran asombrosamente
+diversos, Sanders (1969) pronunció su «hipótesis estabilidad-tiempo». La oscuri-
+dad completa, las temperaturas cercanas a los 0 ºC, la escasez de nutrientes y las
+presiones intolerables se convirtieron, de repente, en las características de un
+medio muy estable que favorecía la especialización de las especies con nichos
+reducidos, capaces de coexistir en equilibrio competitivo (foto 2.9). El intento más
+conocido, y más citado, de estimar el número de especies de las profundidades
+marinas es el trabajo de Grassle y Maciolek (1992), el equivalente marino al artícu-
+lo de Erwin (1982) sobre el número de especies de insectos en las selvas tropicales.
+Grassle y Maciolek estudiaron la pequeña macrofauna contenida en 233 dragas
+(box corers), de 30 x 30 cm, en un transecto de 176 km a 2.100 m de profundidad frente a las costas de Nueva Jersey. Estas muestras, obtenidas de una superficie
+total de 21 m2, contenían 798 especies. Tras un análisis de rarefacción, Grassle y
+Maciolek apreciaron que después de un rápido aumento inicial se incorporaba una
+nueva especie por cada km2. Dado que la superficie de fondo oceánico por deba-
+jo de 1.000 m es de 3 x 108 km2, estimaron que el número de especies de macro-
+fauna esperado en las profundidades marinas (a partir de los 3.000 m) era de 108.
+Más adelante, tras conocerse que muchas de las llanuras abisales son oligotróficas,
+los mismos autores bajaron sus cálculos a unas 107 especies (¡10 millones!), una
+«bomba» que inmediatamente dio lugar a una escalada en las cifras, a la par que a
+una amplia controversia.</p>
+
+<code>Extrapolación basada en la fauna y las regiones conocidas</code>
+<p>Los peces son, sin lugar a dudas, la biota marina más estudiada; y los mares euro-
+peos, la región del mundo donde la biodiversidad marina ha sido mejor documen-
+tada. En el Registro Europeo de Especies Marinas (ERMS, en sus siglas en inglés)
+(Costello, Emblow y White 2001; Costello et al. 2006) hay registradas 29.713
+especies marinas europeas –sin contar los organismos unicelulares–, de las cuales
+1.349 son peces. Si asumimos que el porcentaje de peces con relación a la biodi-
+versidad marina es constante en todo el mundo y que existen 16.475 especies des-
+critas de peces marinos, podemos extrapolar que la magnitud global de biodiver-
+sidad marina es: (16.475 : 1.349) x 29.713 = 362.877 especies.</p>
+<p>La validez de esta cifra depende del número de suposiciones correctas e incorrec-
+tas. Por un lado, los cálculos dan por sentado que la división geográfica mundial
+de biodiversidad marina es igual en todos los grupos taxonómicos o ecológicos.
+Sabemos que esto no es verdad. Los taxones del plancton tienen rangos más
+amplios que los organismos bentónicos, de modo que la biota del plancton europeo
+representa una mayor proporción del total mundial en comparación con la biota
+bentónica. Por ejemplo, las 41 especies de Euphausiacea registradas en Europa constituyen el 48% del total de las 86 especies existentes en todo el mundo, en
+tanto que las 212 especies de Brachyura de Europa suponen el 4% del total de las
+5.200 de todo el mundo. La extrapolación anterior basada en las especies de
+Euphausiacea nos daría sólo 62.325 especies de biodiversidad marina –dato que
+sabemos que es incorrecto–, mientras que la misma extrapolación basada en las
+especies de Brachyura nos daría 728.809 especies (para las fuentes de estos datos,
+v. Costello, Emblow y White 2001 y el cuadro 2.1).</p>
+<p>Otra razón por la cual deberíamos tener cuidado a la hora de aceptar las cifras
+extrapoladas es que no disponemos de un inventario completo de la biodiversi-
+dad europea en general ni de ningún taxón importante en el mundo. Constante-
+mente se añaden nuevas especies –con un promedio de 121 por año– al inventa-
+rio europeo de biodiversidad marina, y Wilson y Costello (2005) han utilizado
+aproximaciones estadísticas para predecir que todavía queda por descubrir un
+11-15% de la fauna europea. A escala global, cada año también se describen
+nuevas especies de peces marinos y Brachyura. En los ejemplos anteriores, el
+número real de especies marinas en Europa podría oscilar entre 35.000 y 40.000,
+de las cuales 1.400 serían peces –de un total de 20.000 en todo el mundo– y 250
+Brachyura –de un posible total mundial de 10.000–. Utilizando estas nuevas
+cifras, el número de especies de organismos marinos pluricelulares en todo el
+mundo sería de 500.000-570.000 especies o de 1,4-1,6 millones, dependiendo de si
+nos basamos en extrapolaciones del número de especies de peces o de Brachyura,
+respectivamente.</p>
+
+<code>Enfoques basados en criterios ecológicos</code>
+<p>Los arrecifes de coral cubren una superficie de 600.000 km2, o, lo que es lo
+mismo, el 0,1% de la superficie del planeta. No obstante, albergan un número
+excepcional de especies, motivo por el cual a menudo se los compara con las sel-
+vas tropicales, además de por la complejidad de sus ecosistemas y por su vulne-
+rabilidad (figura 2.1). A partir de las cifras que suponen la existencia de cerca de
+274.000 especies de organismos marinos, y asumiendo, por un lado, que el 80%
+de ellas se encuentran en la zona litoral y, por otro, que las zonas litorales tropi-
+cales son dos veces más ricas en especies que las zonas templadas, Reaka-Kudla
+(1997) utilizó la relación especies/área para estimar que el número aproximado de
+especies en los arrecifes de coral era de 93.000. Posteriormente, basándose en la
+teoría de que en los arrecifes de coral se dan los mismos procesos ecológicos y
+evolutivos que en las selvas tropicales, y que el conocimiento de ambos medios
+es parecido, señaló que el número de especies en los arrecifes de coral rondaría
+«las 600.000-950.000 especies» si en las selvas tropicales viven 1-2 millones de
+especies, o alcanzaría los 4,7 millones si en aquéllas habitan 20 millones de espe-
+cies. Su conclusión provisional fue que el número real de especies en los arrecifes de coral «probablemente sería como mínimo de 950.000», lo que a su vez sugería
+que los arrecifes de coral son el reservorio de una enorme diversidad de especies
+indocumentadas. De hecho, un estudio a gran escala reveló que el número de
+especies de moluscos presentes en 30.000 hectáreas del sudeste del Pacífico era
+mayor que el existente en los 300 millones de hectáreas de todo el Mediterráneo
+(Bouchet et al. 2002).</p>
+      <ul>
+        <li>Elemento de lista en la metodología</li>
+        <li>Otro elemento de lista en la metodología</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Resultados">
+      <header>Resultados</header>
+      <p>LAS PROFUNDIDADES MARINAS son el mayor ecosistema de la Tierra: cerca del 50%
+de la superficie de nuestro planeta se encuentra por debajo de los 3.000 m de pro-
+fundidad. Además albergan uno de los mayores reservorios de biodiversidad.
+Pero, debido a su distancia y a los desafíos tecnológicos que supone su estudio,
+también constituyen uno de los ecosistemas más desconocidos. La expedición
+HMS Challenger (1872-1876) marcó el inicio de la época «heroica» en la explora-
+ción de las profundidades marinas. Desde entonces, nuestros conocimientos han
+evolucionado en paralelo a los avances tecnológicos.</p>
+      <p>Se considera fondo marino profundo aquel que se extiende por debajo de los aproxi-
+madamente 200 metros de profundidad del talud continental hasta las llanuras abisa-
+les (3.000-6.000 m) y las fosas marinas, como la fosa de las Marianas, donde se alcan-
+za la mayor profundidad del planeta (11.000 m). Estos ecosistemas se caracterizan
+por la ausencia de luz, por un aumento de la presión directamente proporcional a la
+profundidad y por temperaturas bajas –salvo en algunos casos–. En las aguas marinas
+profundas pueden encontrarse desde hábitats inmensos, como las llanuras abisales
+(millones de km2) y las dorsales oceánicas (65.000 km de longitud), hasta otros acci-
+dentes geológicos y/o biológicos más pequeños, como cañones submarinos, monta-
+ñas submarinas, arrecifes de coral de aguas profundas, fuentes hidrotermales y sur-
+gencias frías, donde habitan comunidades únicas de microorganismos y animales.</p>
+<p>Para estudiar los ecosistemas de las profundidades marinas es imprescindible la
+utilización de la última tecnología, que nos proporciona las herramientas necesa-
+rias para la localización, la cartografía y el estudio de los diferentes hábitats y de
+la fauna que albergan. Estas herramientas incluyen sonares de alta resolución para
+cartografiar el fondo marino, sumergibles tripulados, vehículos operados por con-
+trol remoto, vehículos submarinos autónomos, remolcadores de grandes profun-
+didades, material de muestreo, sondas, instrumentos hidroacústicos y cámaras iso-
+térmicas e isobáricas, además de técnicas de laboratorio, como las herramientas
+moleculares. También son cruciales las colaboraciones internacionales, para com-
+partir equipos, experiencia y recursos.</p>
+<p>Las profundidades marinas esconden importantes recursos biológicos y geológi-
+cos. Por este motivo, industrias como la pesca de arrastre de profundidad o la
+exploración petrolífera se adentran cada vez más en zonas de aguas profundas. Los
+científicos están colaborando con las industrias, las agencias de conservación y los
+políticos con objeto de desarrollar alternativas para la promoción de la conserva-
+ción y la gestión de un medio que sigue siendo uno de los grandes desconocidos
+de nuestro planeta.</p>
+
+      <code>HISTORIA DE LA EXPLORACIÓN DE LAS PROFUNDIDADES
+MARINAS: DE LA TEORÍA DE LA «ZONA AZOICA» DE FORBES
+AL DESCUBRIMIENTO DE LAS FUENTES HIDROTERMALES</code>
+<p>Las raíces de nuestro conocimiento sobre los ecosistemas de las profundidades
+marinas se encuentran en las grandes expediciones del siglo XIX, posibles gracias al
+perfeccionamiento de la navegación y de las técnicas e instrumentos de muestreo.
+Entre 1841 y 1842, Edward Forbes postuló la «teoría azoica», tras observar que el
+número de animales en las aguas del mar Egeo disminuía a medida que aumenta-
+ba la profundidad de los dragados. La extrapolación de sus resultados le llevó a
+creer que no existía vida por debajo de los 600 m de profundidad. Sin embargo, las
+expediciones del HMS Lightning (1868) y el HMS Porcupine (1869 y 1870) en la
+región nordeste del Atlántico y el Mediterráneo y, en especial, la expedición del
+HMS Challenger alrededor del mundo (1872-1876) demostraron que existía vida
+a cualquier profundidad, desde la costa hasta las profundidades abisales (Murray
+y Hjort 1912). La expedición del Challenger es considerada hoy en día como el
+inicio de la oceanografía moderna.</p>
+<p>Lo más sorprendente de todo fue descubrir que estos ecosistemas dependían de
+la producción primaria de bacterias quimioautotróficas que para sintetizar mate-
+ria orgánica utilizan compuestos inorgánicos reducidos que fluyen del interior
+de la Tierra en los fluidos hidrotermales (v. apartado 3.3.2). Estos nuevos hábi-
+tats donde la vida prospera sin necesidad de energía solar son los conocidos eco-
+sistemas quimiosintéticos. Hoy en día sabemos que otros hábitats reductores,
+como las surgencias frías, los restos de ballenas y zonas con mínimos de oxíge-
+no, también albergan comunidades que dependen de la energía química, con
+especies y fisiología similares a las de los animales de las fuentes hidrotermales.</p>
+
+<code>ECOSISTEMAS DE LAS PROFUNDIDADES MARINAS:
+CARACTERÍSTICAS AMBIENTALES Y BIODIVERSIDAD</code>
+<p>Los océanos cubren el 70% de la superficie de la Tierra o, dicho de otra manera,
+una superficie equivalente a la suma de dos veces la superficie de Marte y la Luna
+juntos. ¡Pero sabemos más de la geografía de la Luna o Marte que de nuestros océa-
+nos! Un porcentaje superior al 50% de la superficie de la Tierra se encuentra por
+debajo de los 3.000 m de profundidad, con una media de 3.800 m. Las profundida-
+des marinas son, por lo tanto, el mayor ecosistema de nuestro planeta y uno de los
+menos estudiados. Comprenden gran variedad de hábitats, desde el margen inferior
+de la plataforma continental hasta las zonas más profundas de las fosas marinas,
+cada uno de los cuales tiene características físicas y geoquímicas definidas que sus-
+tentan una de las mayores biodiversidades del planeta. Según la fuente de energía
+utilizada por los ecosistemas marinos, los hábitats de las profundidades marinas se
+dividen en dos grupos principales: heterotróficos y quimiosintéticos. En los hábi-
+tats heterotróficos, las comunidades de animales dependen de la materia orgánica
+sintetizada en la superficie a partir de la fotosíntesis, y por ello también de la ener-
+gía solar. En los hábitats quimiosintéticos, las comunidades biológicas dependen de
+la energía de compuestos químicos reducidos, como el sulfuro de hidrógeno (H2S)
+o el metano (CH4), procedentes de las capas internas de la Tierra.</p>
+
+<code>Ecosistemas heterotróficos</code>
+<p>Gran parte de la vida en las aguas profundas de los océanos depende de la llega-
+da de materia orgánica producida en las capas superficiales por fotosíntesis. Son
+los denominados hábitats heterotróficos, porque en ellos no hay ningún tipo de
+producción primaria intrínseca. En el bentos de las profundidades marinas, los
+ecosistemas heterotróficos se extienden desde los márgenes continentales y lla-
+nuras abisales hasta las zonas más profundas en las fosas marinas. Los márgenes
+continentales comprenden gran variedad de hábitats, con características fisico-
+químicas, geológicas y biológicas definidas y específicas que trataremos a conti-
+nuación.</p>
+<code>CORALES DE AGUAS PROFUNDAS</code>
+<p>Los estudios de los márgenes continentales de la década pasada nos descubrieron
+la existencia de corales de aguas profundas en forma de arrecifes a lo largo de los
+márgenes continentales de la región nordeste y noroeste del océano Atlántico. Los
+arrecifes de coral del nordeste del Atlántico (foto 3.3) se encuentran aproximada-
+mente a 1.000 m de profundidad, extendiéndose entre Noruega y Portugal, y
+recientemente se han descubierto ecosistemas similares en el Mediterráneo. Los corales de aguas profundas, como Lophelia pertusa y Madrepora oculata, forman
+arrecifes de carbonato que se extienden a lo largo de varios kilómetros y albergan
+una gran biodiversidad. Sirven de refugio, de estructura y como vivero para otras
+especies. Los arrecifes son complejos hábitats tridimensionales que acogen gran
+variedad de esponjas, corales blandos, moluscos, crustáceos y equinodermos
+(Freiwald 2002), además de especies comerciales. Aunque sabemos muy poco
+sobre la composición y el funcionamiento de estas ricas comunidades, ya existe
+evidencia del daño provocado por la pesca de arrastre de profundidad en zonas
+con corales de aguas profundas.</p>
+<code>MONTAÑAS SUBMARINAS</code>
+<p>Las montañas submarinas se caracterizan por pendientes pronunciadas, presen-
+cia de sustratos blandos y duros, gran variedad de profundidades –desde abisa-
+les hasta sublitorales– y aislamiento geográfico (Rogers 1994). Se estima que hay
+cerca de 100.000 montañas submarinas que superan los 1.000 m de altitud en el
+conjunto de océanos de la Tierra, y muchas más de menor altitud. No obstante, únicamente se han muestreado cerca de 350, y sólo 100 se han estudiado con
+detalle. Las características biológicas que definen las montañas submarinas son:
+elevada productividad, grandes reservas de peces con valor comercial, notable
+biodiversidad y alto grado de endemismo de la fauna bentónica. Todas ellas son
+consecuencia de sus particularidades topográficas e hidrográficas (Forges, Kos-
+low y Poore 2000).</p>
+<p>Igual que sucede con otras zonas de terreno difícil, como los cañones, sabemos
+muy poco de la biodiversidad, la distribución y el funcionamiento de las mon-
+tañas submarinas. Sin embargo, sí sabemos que la pesca en las montañas subma-
+rinas ha sido muy intensa en las últimas décadas (Koslow et al. 2001), y que ello
+podría tener graves consecuencias a largo plazo sobre la biodiversidad de un
+ecosistema aún por conocer. Hoy en día, con la ayuda de nuevos estudios basa-
+dos en medios tecnológicos como los ROV (vehículos de control remoto) o las
+cámaras incorporadas a remolcadores de grandes profundidades, se están
+implantando medidas para favorecer su adecuada gestión y conservación.</p>
+<code>Ecosistemas quimiosintéticos</code>
+<p>Los ecosistemas quimiosintéticos de las aguas profundas se conocen y estudian
+desde hace tan sólo 30 años. Los primeros ecosistemas descubiertos de este tipo
+fueron las fuentes hidrotermales, en 1977, ¡ocho años después de que Neil
+Armstrong y Buzz Aldrin pisaran la Luna! Posteriormente se descubrieron más
+comunidades de las aguas profundas que dependían de la energía química pro-
+veniente del subsuelo marino –como las surgencias frías–, los grandes restos
+orgánicos que descienden hacia el fondo marino –como, por ejemplo, esqueletos
+de ballenas, maderas o algas kelp– y las zonas con concentraciones mínimas de
+oxígeno que bañan el fondo de ciertos márgenes continentales. Los responsables
+de la producción primaria en los ecosistemas quimiosintéticos son microorga-
+nismos quimioautotróficos que sintetizan materia orgánica a partir de materia
+inorgánica reducida. Estos microorganismos pueden ser de vida libre, agregados
+en biofilms, o vivir en simbiosis con algunos de los grupos más importantes de
+invertebrados.</p>
+<code>LA TECNOLOGÍA Y LA EXPLORACIÓN DEL FONDO MARINO</code>
+<p>Desde las primeras expediciones oceanográficas del siglo XIX, la exploración y la
+investigación del fondo marino han evolucionado en paralelo a los avances tecno-
+lógicos. La flota oceanográfica internacional es grande y diversa, y dispone de
+cables de remolque y perforación para los instrumentos de muestreo del fondo
+marino profundo.</p>
+<p>Antes de iniciar el estudio de cualquier comunidad biológica es preciso conocer
+las características geofísicas de su hábitat. El primer paso consiste en el uso de sis-
+temas de batimetría multihaz montados en el casco –equipamiento ya habitual en
+los barcos de investigación actuales– para obtener mapas batimétricos del fondo
+marino. Los sonares de barrido lateral permiten la elaboración de mapas acústicos
+más detallados.</p>
+<p>Estos instrumentos se remolcan detrás del barco, aproximadamente a 500 m por
+encima del fondo marino, y permiten obtener imágenes acústicas del fondo con
+información geofísica detallada, como la presencia de sedimentos o sustrato duro,
+elevaciones y depresiones. El estudio de la columna de agua con instrumentos
+como CTD –que miden en continuo la conductividad, temperatura y profundidad
+de la masa de agua estudiada durante su despliegue vertical– es un método impor-
+tante para caracterizar los parámetros físicos de la masa de la zona estudiada.</p>
+<p>El equipo tradicionalmente más utilizado en los estudios biológicos de la fauna de
+las profundidades marinas incluye redes de arrastre profundo para recoger mues-
+tras de megafauna; multicorers y megacorers para la obtención de muestras cuan-
+titativas de testigos de sedimento, así como de la interfase sedimento-agua, que se
+usan en química orgánica, en el análisis de nutrientes y en estudios de la meiofau-
+na; sacas testigo tipo boxcorer para la recolección de muestras cuantitativas de
+macrofauna; trampas de sedimentos para determinar la cantidad de fitodetritus
+que llega al fondo marino; y medidores de corrientes para el análisis de paráme-
+tros físicos. Finalmente, el estudio de los sistemas de las profundidades marinas
+dio un paso importante a partir del momento en que pudimos observar los hábi-
+tats mediante instrumentos fotográficos y de vídeo. Los remolcadores de profun-
+didad equipados con cámaras fotográficas y de vídeo han sido muy útiles para la
+descripción in situ de los ecosistemas, así como para obtener información espacial
+y de distribución que otras muestras recogidas con redes de arrastre no pueden
+proporcionarnos. Estos instrumentos también son muy eficientes en hábitats de
+terreno complicado, como los cañones, las montañas submarinas o los corales de
+aguas profundas, donde el arrastre o la perforación para la toma de testigos de
+sedimento resultan difíciles, cuando no imposibles.</p>
+<p>Uno de los avances tecnológicos más importantes de los últimos tiempos en ocea-
+nografía ha sido el desarrollo de sumergibles tripulados, vehículos operados por
+control remoto (ROV) y vehículos submarinos autónomos (AUV). Los sumergi-
+bles y los ROV no sólo permiten ver el fondo marino y la fauna directamente, sino
+que también facilitan el muestreo detallado y dirigido y la experimentación in situ.
+Estos vehículos resultan básicos en el estudio de los ecosistemas quimiosintéticos
+de las aguas profundas. Actualmente ya hay varios países que cuentan con sumer-
+gibles y ROV.</p>
+<p>El desarrollo de nuevas tecnologías también es importante en los métodos de
+análisis en el laboratorio. Por ejemplo, las técnicas moleculares marinas han evo-
+lucionado muy rápidamente. El enfoque molecular proporciona las herramien-
+tas necesarias para identificar especies crípticas y discriminar entre poblaciones
+y metapoblaciones, además de permitir analizar el flujo genético y las relaciones
+filogenéticas entre especies de distintos hábitats, la filogeografía y la evolución
+(Shank, Lutz y Vrijenhoek 1999). El desarrollo de isótopos estables y el análisis
+con biomarcadores también han resultado básicos en el estudio de la estructura
+trófica de las comunidades quimiosintéticas de las aguas profundas. Por ejem-
+plo, los isótopos estables se han empleado para diferenciar entre pautas de ali-
+mentación heterotróficas y quimiotróficas en los ecosistemas quimiosintéticos
+(Van Dover y Fry 1994). Por otro lado, las técnicas basadas en biomarcadores se
+han aplicado para estudiar el papel de una pequeña holoturia, Amperima rosea,
+en el cambio de la fauna que durante largo tiempo se ha observado en la llanura
+abisal Porcupine, en la región nordeste del Atlántico (Wigham, Tyler y Billett
+2003).</p>
+<p>Además, el uso de cámaras hiperbáricas es de vital importancia cuando se trabaja
+con animales vivos de las profundidades marinas. Estas cámaras varían en su tama-
+ño y prestaciones. Hay cámaras de presión pequeñas y simples para estudios
+embriológicos, basadas en un cilindro de titanio (Young et al. 1996), y otras más
+grandes, como la francesa IPOCAMP (Incubateur Pressurisé pour l’Observation et la Culture d’Animaux Marins Profonds), que puede llevarse en campañas ocea-
+nográficas y permite estudiar las respuestas de los grandes invertebrados someti-
+dos a distintas presiones y temperaturas (Shillito et al. 2001). Este sistema se ha
+utilizado en estudios experimentales de la fauna de las fuentes hidrotermales. Uno
+de los mayores desafíos de los estudios en las aguas profundas radica en encontrar
+nuevas alternativas que nos posibiliten obtener muestras de fauna y subirlas a la
+superficie evitando su despresurización y los cambios de temperatura a los que
+están sometidas las muestras en su transporte desde el fondo marino hasta el
+barco.</p>
+<code>GESTIÓN Y CONSERVACIÓN</code>
+<p>El fondo marino es el mayor ecosistema de la Tierra y un reservorio de biodiver-
+sidad todavía por conocer. Es también uno de los hábitats menos estudiados del
+planeta. Pero con el rápido desarrollo de las nuevas tecnologías, industrias como
+la extracción petrolífera, la pesca de arrastre de profundidad o la minería están
+penetrando cada vez más en las zonas profundas de los océanos. Estas actividades
+humanas, así como el vertido de materiales tóxicos, están afectando a un ecosiste-
+ma muy frágil, a veces incluso antes de que conozcamos la diversidad y el funcio-
+namiento de sus diferentes comunidades. Las alteraciones antropogénicas son
+especialmente importantes en el fondo marino, porque muchas de las especies que
+alberga tienen una vida larga, crecen lentamente y su maduración sexual es tardía,
+de modo que la recuperación de las poblaciones afectadas por posibles alteracio-
+nes del medio puede ser un proceso largo, pudiéndose llegar incluso a la extinción.
+Algunos de los ecosistemas con mayor riesgo son los corales de aguas profundas,
+las montañas submarinas por debajo de los 1.000 m de profundidad donde crecen
+y se desarrollan varias especies de peces comerciales.</p>
+<p>En el espacio económico europeo, muchas de las áreas de pesca se solapan con
+zonas coralinas (Freiwald et al. 2004). En el océano Atlántico se han encontrado
+evidencias de daños importantes debidos a la utilización de las técnicas de arrastre
+en márgenes continentales donde se desarrollan comunidades coralinas. Los efectos de la pesca sobre los corales de aguas profundas no se traducen únicamente en
+una merma de la biodiversidad, sino también en la destrucción de un ecosistema y
+en la pérdida de hábitats que albergan gran variedad de especies. Esto es especial-
+mente importante en ecosistemas donde viven especies longevas, por los motivos
+expuestos anteriormente. En los últimos años se han puesto en marcha varias ini-
+ciativas con el fin de proteger los corales de las aguas profundas. Según la Conven-
+ción OSPAR (Convención para la Protección del Medio Marino en el Atlántico
+Nordeste), los corales de aguas profundas son uno de los ecosistemas más vulne-
+rables del planeta y donde es preciso implantar medidas de protección. Asimismo,
+la CE garantizó en 2003 la protección urgente de un área al noroeste de Escocia
+(Darwin Mounds) donde viven corales de agua fría, y en 2004 propuso la prohi-
+bición de practicar el arrastre cerca de los arrecifes de coral de las Azores, Madei-
+ra y las islas Canarias. Por otro lado, el Departamento de Pesca y Océanos de
+Canadá (DFO) ordenó cerrar una zona de Lophelia en Nueva Escocia.</p>
+<p>La exploración y la explotación de los hidrocarburos (petróleo y gas) también
+están avanzando rápidamente hacia zonas de aguas más profundas. Se descono-
+cen los posibles efectos de las plataformas de extracción y los procesos de explo-
+tación sobre los ecosistemas cercanos, pero la industria del gas y del petróleo ha trabajado conjuntamente con la comunidad científica para obtener información
+fiable sobre la biodiversidad y el funcionamiento de los ecosistemas y para apo-
+yar el desarrollo de medidas de gestión eficientes en las zonas potencialmente
+explotables.</p>
+<p>Con relación a la minería en aguas internacionales, la ISA (International Seabed
+Authority) es la agencia de la ONU encargada de desarrollar reglamentos y pro-
+cedimientos relacionados con la explotación de los recursos minerales en el
+«Área» (fondo marino fuera de los límites de jurisdicción nacionales) y favorecer
+su gestión sostenible. La ISA concederá derechos de explotación a los diferentes
+países en zonas específicas (p. ej., para nódulos polimetálicos, depósitos de azufre,
+nódulos de ferromanganeso), pero manteniendo un cierto porcentaje para la con-
+servación. La ISA colabora muy estrechamente con los científicos y la industria
+para ofrecer a la comunidad internacional reglamentos que ayuden a gestionar los
+recursos del «Área» y a conservar sus ecosistemas y biodiversidad.</p>
+      <ul>
+        <li>Elemento de lista en los resultados</li>
+        <li>Otro elemento de lista en los resultados</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Conclusiones">
+      <header>Conclusiones</header>
+      <p>LA TIERRA ES UN PLANETA DE AGUA: los océanos cubren el 71% de su superficie.
+Tal vez hubiera sido más adecuado que se llamara el Planeta Azul. La zona pelágica del océano abierto, lejos del fondo marino y del litoral, es el mayor hábitat del planeta y abarca una extensión aproximada de 1.347 millones de km3. En este enorme volumen habita una comunidad muy diversa de microorganismos y metazoos: el plancton. El término plancton deriva de la palabra griega utilizada para «errante» y se utiliza para referirse a una comunidad de organismos transportados por las corrientes oceánicas y las masas de agua. Los animales planctónicos tienen capacidad para nadar, pero, debido a su tamaño generalmente pequeño, no pueden nadar lo suficientemente rápido ni lo bastante lejos como para moverse con autonomía en la masa de agua en la que se encuentran. Existen algunas especies de plancton de mayor tamaño, como colonias de taliáceos del género Pyrosoma, que pueden llegar a medir 4 metros en aguas tropicales, y medusas como la recientemente descubierta gran medusa roja, Tiburonia granrojo. Con todo, se trata de excepciones que ni a pesar de su gran tamaño son capaces de moverse con autonomía contra el flujo de las masas de agua.</p>
+      <p>Los sistemas planctónicos dependen en buena parte de la captación de la energía
+solar a través de la fotosíntesis en las aguas superficiales, donde los niveles de luz
+son adecuados. La producción primaria, tanto la de las algas eucarióticas como la
+de bacterias fotosintéticas, también puede depender de la cantidad de nutrientes:
+la reducida disponibilidad de nutrientes podría llegar a limitarla, incluso en aguas
+bien iluminadas. Los patrones de movimiento de los océanos, la estratificación de
+la columna de agua y los movimientos ascendentes de agua pueden tener todos
+importantes efectos. La mayor parte del plancton se halla en aguas próximas a la
+superficie, pero también puede encontrarse en cualquier punto de la columna de
+agua y alcanzar las fosas oceánicas más profundas. Por debajo del nivel de profun-
+didad donde cesa la producción primaria neta, los organismos del plancton apro-
+vechan la «nieve marina» (materia orgánica que desciende desde las capas más
+superficiales de la columna de agua). El flujo de materia hacia el fondo marino
+sigue un patrón estacional en las zonas templadas, y en el hemisferio norte se ha
+detectado un impulso diferenciado de este material, que se dirige a la zona abisal
+coincidiendo con la llegada de la primavera. Así pues, los cambios que tienen lugar
+en la superficie pueden afectar a los procesos que se producen en las aguas profun-
+das en periodos relativamente cortos.</p>
+
+      <code>Descubrir</code>
+<p>En el año 2004, Craig Venter y sus colaboradores utilizaron técnicas de secuencia-
+ción aleatoria para estudiar los genes presentes en una muestra de agua del mar de
+los Sargazos, y hallaron 1.214.207 nuevos genes y cerca de 1.800 nuevas especies
+de organismos microbianos</p>
+<p>El descubrimiento de nuevos microorganismos marinos no está limitado única-
+mente a las capas superficiales del agua. Las bacterias verdes del azufre son orga-
+nismos anaerobios (organismos que crecen y se reproducen en ausencia de oxíge-
+no molecular) capaces de oxidar compuestos de azufre en presencia de luz, para
+posteriormente reducir el CO2 y obtener el carbono orgánico necesario para su
+crecimiento. Asimismo, también tienen capacidad para realizar la fotosíntesis y cre-
+cer en condiciones mínimas de luz. Recientemente se han descrito nuevas especies
+de bacterias verdes del azufre en muestras de fuentes hidrotermales submarinas
+donde la única fuente de luz son las radiaciones geotérmicas, las cuales contienen
+longitudes de onda que pueden ser absorbidas por los pigmentos fotosintéticos de
+estos organismos.</p>
+<p>Más pequeños aún que las bacterias son los virus marinos. Los virus son tan suma-
+mente abundantes en el plancton, que se cree que constituyen el segundo compo-
+nente más importante de la biomasa oceánica, por detrás de las bacterias. En las
+aguas cercanas al litoral habrá unos 107 virus por mililitro de agua, aunque esta cifra
+disminuye progresivamente a medida que nos alejamos de la costa y aumenta la
+profundidad del agua. Pero los virus no son importantes solamente por su abun-
+dancia, sino también por la gran diversidad biológica y genética que presentan.</p>
+<p>Existen pocos estudios sobre el plancton de aguas oceánicas más profundas: los
+océanos son inmensos, y apenas existen sumergibles equipados para extraer mues-
+tras a profundidades medias superiores a los 2.000 metros. La cantidad de zoo-
+plancton disminuye a medida que aumenta la profundidad, pero se incrementa de
+nuevo en las zonas más próximas al fondo marino. Esta región de la base de la
+columna de agua, la zona hiperbentónica, es una región de interacción dinámica
+entre la columna de agua y el suelo oceánico de la que es difícil extraer muestras.
+Hay que arrastrar las redes muy cerca de la profundidad máxima (en condiciones
+ideales, a tan sólo 1 metro por encima del sedimento), sin llegar a tocar el fondo.
+Las muestras que se han podido conseguir demuestran que en la zona hiperben-
+tónica habitan numerosas especies nuevas, como, por ejemplo, de copépodos,
+diminutos crustáceos de 1-2 mm de longitud de la familia de los cangrejos y las
+gambas. La zona hiperbentónica es rica en nuevas especies, nuevos géneros e
+incluso nuevas familias de copépodos, pero la obtención de muestras sigue siendo
+uno de los mayores retos de la biología submarina.</p>
+<p>No obstante, también se están descubriendo otras especies de mayor tamaño. En el
+cañón submarino de Monterrey, frente a las costas de California, se ha observado en
+varias ocasiones la presencia de una medusa de un color rojo intenso, Tiburonia
+granrojo (foto 4.3), a profundidades de 645 metros y superiores. Hasta el momento
+sólo se ha capturado un ejemplar, pero se sabe que el diámetro de estos predadores oscila entre 60 y 90 cm. Una característica poco habitual de esta nueva especie es que
+carece de tentáculos alrededor de su cuerpo –en forma de campana–, los cuales son
+utilizados por la mayoría de las medusas para cazar a sus presas; en lugar de tentáculos, posee entre cuatro y siete brazos gruesos y arrugados en su parte inferior.</p>
+<code>Comprender</code>
+<p>El avance en los conocimientos sobre ecología y los ciclos globales de todo tipo
+de elementos y recursos ha comportado un cambio conceptual en nuestra manera
+de entender los ecosistemas terrestres. Este cambio se debe en parte a la aparición
+de una nueva manera de cuantificar la dependencia del hombre de los servicios y
+funciones de los ecosistemas naturales.</p>
+
+<code>EL CICLO DEL CARBONO Y LA FOTOSÍNTESIS</code>
+<p>Los océanos son parte integral de los procesos naturales del ciclo del carbono a
+escala global. Se estima que desde la época preindustrial, hace más de 200 años, han
+absorbido cerca de la mitad de las emisiones de CO2 generadas por la combustión de los hidrocarburos y la producción de cemento. Se calcula que los océanos y los
+organismos que los habitan almacenan 38.000 gigatoneladas de carbono, cifra que
+equivale al 95% de todo el carbono del conjunto de los océanos, la atmósfera y la
+superficie terrestre. Los océanos constituyen un gran reservorio de carbono, pero
+su capacidad para absorber el CO2 atmosférico disminuirá a medida que aumen-
+ten las cantidades de éste en la atmósfera.</p>
+<p>La abundancia de vida en la superficie de la Tierra depende prácticamente en su tota-
+lidad de la fotosíntesis, proceso natural que utiliza la energía luminosa del Sol para fijar
+CO2. La principal fuente de luz de los hábitats naturales es el Sol, y por este motivo
+la fotosíntesis se circunscribe en gran medida a medios solares fóticos de la superficie
+terrestre. Durante mucho tiempo, los integrantes del fitoplancton eucariótico marino,
+en especial las diatomeas, y en menor grado también los dinoflagelados, fueron consi-
+derados los organismos fotosintéticos más abundantes de los océanos. No obstante,
+más recientemente se ha observado que las bacterias de los océanos también pueden
+realizar la fotosíntesis a gran escala. Hace un par de años, por ejemplo, Craig Venter
+et al. (2004) encontraron 782 genes pseudo-rodopsina en el mar de los Sargazos. La
+fotosíntesis mediada por rodopsina que efectúan las bacterias del plancton puede des-
+empeñar un papel muy importante en el flujo de energía y carbono en los océanos.</p>
+
+<code>CONCLUSIÓN</code>
+<p>Sabemos poco sobre la biología de los océanos que nos rodean. Dada su inmensidad, quizá no sea de extrañar que nuestro conocimiento sobre los microorganismos marinos resulte tan incompleto. Sin embargo, el desarrollo de nuevas técnicas moleculares ha proporcionado nuevas y potentes herramientas de estudio que están contribuyendo a reconfigurar nuestras ideas. La vida microbiana en los océanos es mucho más diversa de lo que nunca habíamos imaginado, y la diversidad fisiológica bacteriana está cambiando nuestras teorías sobre los procesos de flujo de materia en los ciclos biogeoquímicos. En términos funcionales, está claro que la cadena trófica microbiana es al menos tan importante como la tradicional diatomea-copépodo-pez. El objetivo final de las investigaciones sobre biología marina debe ser el desarrollo de modelos capaces de integrar los conocimientos disponibles sobre la diversidad del plancton con nuestro mejor entendimiento del funcionamiento de los sistemas planctónicos. Estos modelos nos permitirán predecir el cambio, pero también, y más importante si cabe, usar nuestro conocimiento para hacer más sostenible la utilización de los océanos en beneficio de la humanidad. Los retos científicos a los que nos enfrentamos en esta tarea son:</p>
+<p>  – Documentar y describir la diversidad de la vida en el plancton, incluyendo la diversidad microbiana.</p>
+<p>  – Explorar y estudiar la biodiversidad única que se observa en algunos puntos calientes, como las cuevas anquialinas.</p>
+<p>  – Entender el papel de la biodiversidad en los ciclos globales.</p>
+<p>  – Medir los cambios en la biodiversidad a lo largo del tiempo y desarrollar una red global de puntos de observación.</p>
+<p>  – Identificar los promotores del cambio en el plancton.</p>
+<p>  – Desarrollar modelos robustos que expliquen cómo cambiará el plancton en respuesta a cambios ambientales regionales y globales.</p>
+
+      
+      <ul>
+        <li>Elemento de lista en las conclusiones</li>
+        <li>Otro elemento de lista en las conclusiones</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
