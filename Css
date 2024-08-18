@@ -1,0 +1,127 @@
+
+      :root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --text-color: #333;
+  --background-color: #f9f9f9;
+  --navbar-width: 280px;
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.8;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+#navbar {
+  width: var(--navbar-width);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--secondary-color);
+  padding: 30px 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all var(--transition-speed) ease;
+}
+
+#navbar header {
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all var(--transition-speed);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateX(5px);
+}
+
+#main-doc {
+  margin-left: var(--navbar-width);
+  padding: 40px;
+  max-width: 1200px;
+  width: calc(100% - var(--navbar-width));
+}
+
+.main-section {
+  margin-bottom: 60px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.main-section header {
+  font-size: 2.2em;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 15px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  display: block;
+  margin: 20px 0;
+  font-size: 0.9em;
+  border-left: 4px solid var(--primary-color);
+}
+
+ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --navbar-width: 100%;
+  }
+
+  #main-doc {
+    width: 100%;
+    margin-left: 0;
+    padding-top: calc(var(--navbar-width) + 20px);
+  }
+
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 20px;
+  }
+
+  .nav-link:hover {
+    transform: none;
+  }
+}
